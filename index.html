@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1 {
+            color: azure;
+        }
+        body {
+            text-align: center;
+            background-image: url('Webp.net-resizeimage.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        figure {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        figcaption {
+            font-style: italic;
+        } */
+    </style>
+</head>
+<body bgcolor="green">
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    
+    <div>
+        <video src="./856787-hd_1920_1080_30fps.mp4" controls width="500px"></video>
+    </div>
+    
+    <audio src="./Aruge Vaa.mp3" controls></audio>
+
+    <h1>Ganesh, welcome</h1>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <figure>
+        <img src="./photo-unsplash.avif" alt="Example Image" width="200" height="150">
+        <figcaption>An example image with a caption.</figcaption>
+    </figure>
+
+    <script>
+        // Drawing on the canvas
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.fillStyle = '#FF0000';
+        // context.fillRect(10, 10, 150, 5);
+        context.beginPath();
+        context.arc(100, 50, 40, 0, 2 * Math.PI);
+        context.fill();
+       
+        context.arc(250, 100, 50, 0, 2 * Math.PI)
+    </script>
+</body>
+</html>
